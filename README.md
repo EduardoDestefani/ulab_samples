@@ -74,11 +74,10 @@ YouTube channel, 02/2020;
 
 ### Analyses
 
-- 5 boards in the above table have double precision (FP64) hardware support :
-  * [Pyboard D SF6](https://store.micropython.org/product/PYBD-SF6-W4F2) with ARM Cortex-M7 [STM32F767VIT](https://www.st.com/en/microcontrollers-microprocessors/stm32f767vi.html);
-  * [OpenMV M7](https://openmv.io/products/openmv-cam-m7) with ARM Cortex-M7 [STM32F765VI](https://www.st.com/en/microcontrollers-microprocessors/stm32f765vi.html);
-  * [OpenMV H7](https://openmv.io/products/openmv-cam-h7) with ARM Cortex-M7 [STM32H743VI](https://www.st.com/en/microcontrollers-microprocessors/stm32h743vi.html);
-  * [Sipeed MAix BiT](https://www.seeedstudio.com/Sipeed-MAix-BiT-for-RISC-V-AI-IoT-p-2872.html) with RISC-V 64bit [Kendryte K210](https://canaan.io/product/kendryteai);
-  * [Teensy 4.0](https://www.pjrc.com/store/teensy40.html) with ARM Cortex-M7 [NXP iMX RT1062](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060)
-but only 2 of them, Pyboard D SF6 with offical/community firmware and Sipeed MAix BiT with K210 Lobo firmware currently support FP64;
-- CircuitPython on OpenMV H7 and Teensy 4.x are not well optimised.
+- [**OpenMV H7**](https://openmv.io/products/openmv-cam-h7) with ARM Cortex-M7 [STM32H743VI](https://www.st.com/en/microcontrollers-microprocessors/stm32h743vi.html) has double precision (FP64) hardware support, but the OpenMV firmware only supports single precision (FP32), **is the winner in single precision (FP32) FFT**. Notice that [CircuitPython on OpenMV H7](https://circuitpython.org/board/openmv_h7/) is not well optimised;
+- [**Sipeed MAix BiT**](https://www.seeedstudio.com/Sipeed-MAix-BiT-for-RISC-V-AI-IoT-p-2872.html) with RISC-V 64bit [Kendryte K210](https://canaan.io/product/kendryteai) has double precision (FP64) hardware support **is the winner in double precision (FP64) FFT when using the MicroPython for K210 Lobo firmware** (supporting only FP64). While MaixPy firmware is for single precision (FP32), even with overclocking it is slower, so not well optimised;
+- [**OpenMV M7**](https://openmv.io/products/openmv-cam-m7) is old as it was released in January 2017, but with ARM Cortex-M7 [STM32F765VI](https://www.st.com/en/microcontrollers-microprocessors/stm32f765vi.html) it has FP64 hardware support, while OpenMV firmware only supporting single precision (FP32), it is **the 2nd place in FP32 FFT**;
+- [**Pyboard D SF6**](https://store.micropython.org/product/PYBD-SF6-W4F2) with ARM Cortex-M7 [STM32F767VIT](https://www.st.com/en/microcontrollers-microprocessors/stm32f767vi.html) has double precision (FP64) hardware support, it is **2nd place in FP64 FFT and 3rd place in FP32 FFT**;
+- [**Pyboard D SF2**](https://store.micropython.org/product/PYBD-SF2-W4F2) with ARM Cortex-M7 [STM32F722IEK](https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f7-series/stm32f7x2/stm32f722ie.html), is a lot cheaper than Pyboard D SF6 but has only FP32 hardware support, obtaining the **4th place** and almost the same performance of Pyboard D SF6 **in in FP32 FFT**, but is is a lot slower in FP64 FFT;
+- ESP32 boards with higher (240 MHz) clock and without PSRAM have good performance in FP32 FFT, 
+- [Teensy 4.0](https://www.pjrc.com/store/teensy40.html) with ARM Cortex-M7 [NXP iMX RT1062](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060) has double precision (FP64) hardware support, bbut CircuitPython only supports FP32 and it is not well optimised.
