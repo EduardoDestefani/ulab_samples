@@ -42,7 +42,7 @@ YouTube channel, 02/2020;
 
 ## Benchmark of FFT with 1024 points
 
-`ulab.fft.fft()` calculation time for 1024 points with single precision (FP32) and double precision (FP64) for float point numbers, using ulab v0.54.0 & MicroPython v1.12 (if not cited) :
+`ulab.fft.fft()` calculation time (of `a, b = fft.fft(y)`) for 1024 points with single precision (FP32) and double precision (FP64) for float point numbers, using ulab v0.54.0 & MicroPython v1.12 (if not cited) :
 
 | Board                       |  Clock (MHz)  |  Time (ms) in FP32  |  Time (ms) in FP64  |
 | :-------------------------- | :-----------: | :-----------------: | :-----------------: |
