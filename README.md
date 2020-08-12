@@ -86,3 +86,5 @@ YouTube channel, 02/2020;
 - [**Pyboard v1.1**](https://store.micropython.org/product/PYBv1.1), while it **is the oldest and 1st MicroPython board, announced in 2013 and released in 2014**, its ARM Cortex-M4F [STM32F405RG](https://www.st.com/en/microcontrollers-microprocessors/stm32f405rg.html) with only FP32 hardware support **still has good performance in FP32 FFT. Its CircuitPython firmware is also well optimised**;
 - **CircuitPython on [Adafruit ItsyBitsy M4 Express](https://www.adafruit.com/product/3800) and [Adafruit CLUE nRF52840 Express](https://www.adafruit.com/product/4500) seems well optimised**, supporting FP32 FFT;
 - [**ESP8266**](https://www.espressif.com/en/products/socs/esp8266) is the last in FP32 FFT performance but **is the cheapest microcontroller supporting ulab** (FP32 FFT), as an ESP8266 ESP-01S costs about US$1.
+
+**It would be very useful to have more MicroPython/CircuitPython firmwares supporting both single precision (FP32) and double precision (FP64)**, including on all the 5 boards above with double precision (FP64) hardware support.
