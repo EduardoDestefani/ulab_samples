@@ -87,4 +87,4 @@ YouTube channel, 02/2020;
 - **CircuitPython on [Adafruit ItsyBitsy M4 Express](https://www.adafruit.com/product/3800) and [Adafruit CLUE nRF52840 Express](https://www.adafruit.com/product/4500) seems well optimised**, supporting FP32 FFT;
 - [**ESP8266**](https://www.espressif.com/en/products/socs/esp8266) is the last in FP32 FFT performance but **is the cheapest microcontroller supporting ulab** (FP32 FFT), as an ESP8266 ESP-01S costs about US$1.
 
-**It would be very useful to have more MicroPython/CircuitPython firmwares supporting both single precision (FP32) and double precision (FP64)**, including on all the 5 boards above with double precision (FP64) hardware support.
+**It would be very useful to have more MicroPython/CircuitPython firmwares supporting both single precision (FP32) and double precision (FP64)**, including for all the 5 boards above with double precision (FP64) hardware support.
