@@ -14,7 +14,7 @@
 - [Jupyter Notebook 'ulab Manual, with technical details of the implementation'](https://github.com/v923z/micropython-ulab/blob/master/docs/ulab-manual.ipynb);
 - Adafruit tutorial, ['ulab: Crunch Numbers fast in CircuitPython. Use numpy-like commands to process data quickly'](https://learn.adafruit.com/ulab-crunch-numbers-fast-with-circuitpython);
 - MicroPython Forum topic, ['ulab, or what you will - numpy on bare metal'](https://forum.micropython.org/viewtopic.php?f=3&t=7005);
-- news e articles about ulab :
+- news and articles about ulab :
     * vídeo [It's FFT Tuesday! Testing out mic FFT on CircuitPython](https://www.youtube.com/watch?v=c0SMT1UY37M) - Adafruit Industries
 YouTube channel, 02/2020;
     * [NUMPY COMES TO MICRO PYTHON](https://hackaday.com/2019/10/29/numpy-comes-to-micro-python/) - Hackaday, 29/10/2019;
@@ -42,7 +42,7 @@ YouTube channel, 02/2020;
 
 ## Benchmark of FFT with 1024 points
 
-`ulab.fft.fft()` calculation time (of `a, b = fft.fft(y)`) for 1024 points with single precision (FP32) and double precision (FP64) for float point numbers, using ulab v0.54.0 & MicroPython v1.12 (if not cited) :
+`ulab.fft.fft()` calculation time (of `a, b = fft.fft(y)` so it includes the time to transfer the result) for 1024 points with single precision (FP32) and double precision (FP64) for float point numbers, using ulab v0.54.0 & MicroPython v1.12 (if not cited) :
 
 | Board                       |  Clock (MHz)  |  Time (ms) in FP32  |  Time (ms) in FP64  |
 | :-------------------------- | :-----------: | :-----------------: | :-----------------: |
