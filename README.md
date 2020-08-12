@@ -1,6 +1,4 @@
-# ulab_samples
-
-ulab Samples - links, examples, benchmarks, etc, about ulab module, a NumPy-like array manipulation library for Micropython and CircuitPython
+# ulab Samples - links, examples, benchmarks, etc, about ulab module, a NumPy-like array manipulation library for Micropython and CircuitPython
 
 ##### Authors : [Eduardo Destefani Stefanato](https://github.com/EduardoDestefani), [Pedro Henrique Robadel da Silva Camâra](https://github.com/ph-robadel), [Roberto Colistete Jr](https://github.com/rcolistete), [Thiago Ferreira Santos](https://github.com/thiagofe)
 
@@ -76,9 +74,11 @@ YouTube channel, 02/2020;
 
 ### Analyses
 
-- only boards in the above table with double precision (FP64) hardware support are :
+- 5 boards in the above table have double precision (FP64) hardware support :
   * [Pyboard D SF6](https://store.micropython.org/product/PYBD-SF6-W4F2) with ARM Cortex-M7 [STM32F767VIT](https://www.st.com/en/microcontrollers-microprocessors/stm32f767vi.html);
   * [OpenMV M7](https://openmv.io/products/openmv-cam-m7) with ARM Cortex-M7 [STM32F765VI](https://www.st.com/en/microcontrollers-microprocessors/stm32f765vi.html);
   * [OpenMV H7](https://openmv.io/products/openmv-cam-h7) with ARM Cortex-M7 [STM32H743VI](https://www.st.com/en/microcontrollers-microprocessors/stm32h743vi.html);
-  * [MAixBiT]();
+  * [Sipeed MAix BiT](https://www.seeedstudio.com/Sipeed-MAix-BiT-for-RISC-V-AI-IoT-p-2872.html) with RISC-V 64bit [Kendryte K210](https://canaan.io/product/kendryteai);
+  * [Teensy 4.0](https://www.pjrc.com/store/teensy40.html) with ARM Cortex-M7 [NXP iMX RT1062](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060)
+but only 2 of them, Pyboard D SF6 with offical/community firmware and Sipeed MAix BiT with K210 Lobo firmware currently support FP64;
 - CircuitPython on OpenMV H7 and Teensy 4.x are not well optimised.
