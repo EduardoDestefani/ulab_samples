@@ -1,6 +1,6 @@
 # ulab Samples
 
-## Links, examples, benchmarks, etc, about [ulab module](https://github.com/v923z/micropython-ulab), a NumPy-like array manipulation library for MicroPython and CircuitPython
+### Links, examples, benchmarks, etc, about [ulab module](https://github.com/v923z/micropython-ulab), a NumPy-like array manipulation library for MicroPython and CircuitPython
 
 ##### Authors : [Eduardo Destefani Stefanato](https://github.com/EduardoDestefani), [Pedro Henrique Robadel da Silva Camâra](https://github.com/ph-robadel), [Roberto Colistete Jr](https://github.com/rcolistete), [Thiago Ferreira Santos](https://github.com/thiagofe)
 
